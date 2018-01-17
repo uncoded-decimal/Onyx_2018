@@ -1,74 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:hint="Name"
         android:id="@+id/pName"
         android:layout_margin="5dp"
         android:layout_marginTop="15dp"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords"
         android:padding="5dp"
+        android:background="@drawable/butt"
+        android:singleLine="true"
+        android:textSize="20dp"
         style="@style/Base.CardView"/>
 
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:hint="Email ID"
+        android:textSize="20dp"
         android:inputType="textEmailAddress"
         android:layout_below="@+id/pName"
         android:padding="5dp"
+        android:background="@drawable/butt"
         android:id="@+id/pEmail"
         android:layout_margin="5dp"
+        android:singleLine="true"
         style="@style/Base.CardView"/>
 
 
     <EditText
         android:padding="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:id="@+id/pCollege"
+        android:background="@drawable/butt"
+        android:singleLine="true"
         android:layout_below="@+id/pEmail"
         android:hint="College"
+        android:textSize="20dp"
         android:layout_margin="5dp"
-        android:inputType="textPersonName"
+        android:inputType="textCapCharacters"
         style="@style/Base.CardView"/>
 
 
-<EditText
+    <EditText
         android:layout_width="match_parent"
         android:padding="5dp"
-    android:layout_margin="5dp"
-    android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="30dp"
         android:id="@+id/pPhone"
+        android:textSize="20dp"
+        android:background="@drawable/butt"
         android:layout_below="@id/pCollege"
         android:inputType="numberDecimal"
-        android:ems="10"
+        android:singleLine="true"
+        android:maxLength="10"
         android:hint="Contact Number"
         style="@style/Base.CardView"/>
 
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:padding="5dp"
-        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="30dp"
+        android:background="@drawable/butt"
+        android:singleLine="true"
         android:layout_margin="5dp"
         android:id="@+id/pEvent"
         android:textIsSelectable="false"
+        android:inputType="none"
         android:layout_below="@id/pPhone"
         style="@style/Base.CardView"/>
 
 
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:fontFamily="@font/ubuntu_regular"
         android:id="@+id/send"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:text="Confirm"
+        android:background="@drawable/text_background0"
         />
 </RelativeLayout>
