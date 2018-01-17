@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/pName"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        style="@style/Base.CardView"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/pName"
+        android:padding="5dp"
+        android:id="@+id/pEmail"
+        android:layout_margin="5dp"
+        style="@style/Base.CardView"/>
+
+
+    <EditText
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pCollege"
+        android:layout_below="@+id/pEmail"
+        android:hint="College"
+        android:layout_margin="5dp"
+        android:inputType="textPersonName"
+        style="@style/Base.CardView"/>
+
+
+<EditText
+        android:layout_width="match_parent"
+        android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+        android:id="@+id/pPhone"
+        android:layout_below="@id/pCollege"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Contact Number"
+        style="@style/Base.CardView"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/pEvent"
+        android:textIsSelectable="false"
+        android:layout_below="@id/pPhone"
+        style="@style/Base.CardView"/>
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm"
+        />
+</RelativeLayout>

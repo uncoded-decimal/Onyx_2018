@@ -81,6 +81,7 @@
         android:paddingVertical="3dp"
         android:paddingHorizontal="10dp"
         android:textStyle="bold"
+        android:onClick="onButtonClick"
         android:background="@color/colorAccent"
         android:layout_gravity="bottom|center_horizontal"
         app:layout_anchorGravity="bottom"/>

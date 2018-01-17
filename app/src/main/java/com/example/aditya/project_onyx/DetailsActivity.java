@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.security.Key;
 
 public class DetailsActivity extends AppCompatActivity {
+    String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class DetailsActivity extends AppCompatActivity {
         if(b==null)
             return;
         else {
-            String title = b.getString("title");
+            title = b.getString("title");
             textView.setText(title);
             textView1.setText(b.getString("desc"));
             imageView.setImageResource(R.drawable.propic);
@@ -39,6 +40,8 @@ public class DetailsActivity extends AppCompatActivity {
         if (v.getId()== R.id.register)
         {
             Intent i= new Intent(DetailsActivity.this,Register.class);
+            i.putExtra("EventName",title);
+            startActivity(i);
         }
     }
 }
