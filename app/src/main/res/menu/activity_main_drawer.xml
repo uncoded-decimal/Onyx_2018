@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="About" />
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Events" />
+        <item
+            android:id="@+id/schedule"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/meetteam"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Meet The Team" />
+    </group>
+
+    <item android:title="Social Sites">
+        <menu>
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/instagram"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Instagram" />
+        </menu>
+    </item>
+
+</menu>
