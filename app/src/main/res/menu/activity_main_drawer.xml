@@ -22,15 +22,15 @@
             android:title="Meet The Team" />
     </group>
 
-    <item android:title="Social Sites">
+    <item android:title="Explore Us">
         <menu>
             <item
                 android:id="@+id/facebook"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/fb_icon"
                 android:title="Facebook" />
             <item
                 android:id="@+id/instagram"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/insta_icon"
                 android:title="Instagram" />
         </menu>
     </item>
