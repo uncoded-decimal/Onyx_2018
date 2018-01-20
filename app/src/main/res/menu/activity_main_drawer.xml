@@ -26,11 +26,11 @@
         <menu>
             <item
                 android:id="@+id/facebook"
-                android:icon="@drawable/fb_icon"
+                android:icon="@drawable/ic_menu_share"
                 android:title="Facebook" />
             <item
                 android:id="@+id/instagram"
-                android:icon="@drawable/insta_icon"
+                android:icon="@drawable/ic_arrow_forward"
                 android:title="Instagram" />
         </menu>
     </item>
