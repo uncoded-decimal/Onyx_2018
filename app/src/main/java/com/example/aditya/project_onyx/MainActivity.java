@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity
             fragment=new Events_fragment();
 
         } else if (id == R.id.schedule) {
-            fragment=new ScheduleFragment();
+          //  fragment=new ScheduleFragment();
         } else if (id == R.id.meetteam) {
 
         } else if (id == R.id.facebook) {
